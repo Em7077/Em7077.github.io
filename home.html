@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-indigo-600">Em</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#skills" class="hover:text-indigo-600">Skills</a>
+        <a href="#projects" class="hover:text-indigo-600">Projects</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+ <section class="py-20 bg-cover bg-center bg-no-repeat" 
+         style="background-image: url('/Hback.jpg');" 
+         id="about">
+  <div class="bg-indigo-50 bg-opacity-60 py-10">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8">
+      
+      <!-- รูปโปรไฟล์ -->
+      <div class="flex-shrink-0">
+        <img src="/Em.jpg" alt="Profile Photo" class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-md border-4 border-white">
+      </div>
+
+      <!-- ข้อความแนะนำตัว -->
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-4 text-gray-800">Hello, I'm Em</h2>
+        <p class="text-gray-700 text-lg max-w-md">
+          I am a Software Engineering student passionate about QA Tester and UX/UI Designer.<br>
+          Looking for an internship opportunity to gain real-world experience.
+        </p>
+        <a href="#projects" class="mt-6 inline-block bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">View My Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Skill Section -->
+  <section class="py-16 bg-white" id="skills">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-8 text-center">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+        <!-- HTML -->
+        <div class="p-4 border rounded shadow hover:shadow-md flex flex-col items-center">
+          <!-- <i class="fab fa-html5 text-orange-500 text-4xl mb-2"></i> -->
+           <img src="https://skillicons.dev/icons?i=html" />
+           <span>HTML</span>
+          </div>
+          
+          <!-- CSS -->
+          <div class="p-4 border rounded shadow hover:shadow-md flex flex-col items-center">
+            <!-- <i class="fab fa-css3-alt text-blue-500 text-4xl mb-2"></i> -->
+            <img src="https://skillicons.dev/icons?i=css" />
+          <span>CSS</span>
+
+
+        </div>
+
+        <!-- JavaScript -->
+        <div class="p-4 border rounded shadow hover:shadow-md flex flex-col items-center">
+          <!-- <i class="fab fa-js-square text-yellow-400 text-4xl mb-2"></i> -->
+           <img src="https://skillicons.dev/icons?i=js" />
+          <span>JavaScript</span>
+        </div>
+
+        <!-- Tailwind CSS -->
+        <div class="p-4 border rounded shadow hover:shadow-md flex flex-col items-center">
+          <!-- <i class="fas fa-wind text-teal-500 text-4xl mb-2"></i> -->
+           <img src="https://skillicons.dev/icons?i=tailwind" />
+          <span>Tailwind CSS</span>
+        </div>
+
+        <!-- Git / GitHub -->
+        <div class="p-4 border rounded shadow hover:shadow-md flex flex-col items-center">
+          <!-- <i class="fab fa-git-alt text-red-500 text-4xl mb-2"></i> -->
+           <img src="https://skillicons.dev/icons?i=github" />
+           <span>Git / GitHub</span>
+          </div>
+          
+          <!-- Figma -->
+          <div class="p-4 border rounded shadow hover:shadow-md flex flex-col items-center">
+            <!-- <i class="fab fa-figma text-pink-500 text-4xl mb-2"></i> -->
+            <img src="https://skillicons.dev/icons?i=figma" />
+          <span>Figma</span>
+        </div>
+
+        <!-- Postman -->
+        <div class="p-4 border rounded shadow hover:shadow-md flex flex-col items-center">
+          <!-- <i class="fas fa-vial text-purple-500 text-4xl mb-2"></i> -->
+          <img src="https://skillicons.dev/icons?i=postman" />
+          <span>Postman</span>
+        </div>
+                <!-- Nextjs -->
+        <div class="p-4 border rounded shadow hover:shadow-md flex flex-col items-center">
+          <!-- <i class="fas fa-vial text-purple-500 text-4xl mb-2"></i> -->
+          <img src="https://skillicons.dev/icons?i=nextjs" />
+          <span>Nextjs<p>(Basic)</span>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects Section -->
+  <section class="py-16 bg-indigo-50" id="projects">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-8 text-center">My Projects</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg">
+          <h4 class="text-lg font-bold mb-2">Mobile App for [Topic]</h4>
+          <p class="text-gray-600 mb-2">A mobile app that won 1st place in [Faculty/Competition].</p>
+          <a href="https://github.com/yourusername/project1" class="text-indigo-600 hover:underline">View on GitHub</a>
+        </div>
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg">
+          <h4 class="text-lg font-bold mb-2">UX/UI Design Project</h4>
+          <p class="text-gray-600 mb-2">Designed and prototyped an app using Figma for a class project.</p>
+          <a href="https://www.figma.com/yourproject" class="text-indigo-600 hover:underline">View Prototype</a>
+        </div>
+        <!-- เพิ่มโปรเจกต์อื่น ๆ ตามต้องการ -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 bg-white" id="contact">
+    <div class="max-w-xl mx-auto px-4 text-center-left">
+      <center><h3 class="text-2xl font-semibold mb-4">Contact Me</h3>
+      <p class="text-gray-600 mb-6">Feel free to reach out for internship opportunities or collaborations.</p></center>
+      <p>Email: <a href="myintthay463@gmail.com" class="text-indigo-600 hover:underline">myintthay463@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Em7077" class="text-indigo-600 hover:underline">Em7077</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" class="text-indigo-600 hover:underline">linkedin.com/in/yourprofile</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 py-4 text-center text-sm text-gray-600">
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
